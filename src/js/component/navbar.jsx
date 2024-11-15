@@ -1,11 +1,15 @@
 import React from "react";
 
+const collapsedButtonStyles = {
+  backgroundColor: "#f8f9fa"
+}
+
+
 let Navbar = function(){
     return <nav className="navbar navbar-expand-lg bg-dark">
     <div className="container-fluid col-lg-7">
       <a className="navbar-brand text-white" href="#">Start Bootstrap</a>
-      {/* tengo que hacer uso del atributo style ya que con bootstrap, navbar-toggler tiene por defecto fondo trasparente y el navegador lo interpreta por encima de los bg de bootstrap */}
-      <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style={{ backgroundColor: "#f8f9fa" }}>
+      <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style={collapsedButtonStyles}>
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
