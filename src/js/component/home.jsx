@@ -10,17 +10,19 @@ import Footer from "./footer";
 const Home = () => {
 	return (
 	<>
-		<Navbar />
-		<div className="col-lg-7 mx-auto">
-			<CardJumbotron />
-			<div className="row justify-content-between">
-				<CardWithImage />
-				<CardWithImage />
-				<CardWithImage />
-				<CardWithImage />
+		<div className="d-flex flex-column min-vh-100">
+			<Navbar />
+			<div className="flex-grow-1 col-lg-7 mx-auto">
+				<CardJumbotron />
+				<div className="row justify-content-between">
+					<CardWithImage />
+					<CardWithImage />
+					<CardWithImage />
+					<CardWithImage />
+				</div>
 			</div>
+			<Footer />
 		</div>
-		<Footer />
 	</>
 	)
 };
